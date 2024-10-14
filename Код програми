@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    SetConsoleOutputCP(1251);
+    SetConsoleCP(1251);
+    int p;
+    printf("Введіть кількість розрядів не більше 30 \n");
+    printf("Введіть значення:");
+    scanf("%d",&p);
+    if(p<=30){
+    int result = pow(2,p)-(p-2);
+    printf("Можна свормувати %d чисел із %d розрядів використовуючи цифри 5 та 9, в яких три однакові цифри не стоять поруч",result,p);
+    }else printf("Введіть інше значення");
+
+
+    return 0;
+}
